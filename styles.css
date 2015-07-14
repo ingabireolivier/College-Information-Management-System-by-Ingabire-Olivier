@@ -1,0 +1,366 @@
+html{
+    /*
+	color: #000;
+    margin: 0;
+    padding: 0;
+    background: #6e6057 url('/images/curb-drain.jpg') no-repeat fixed top left;
+	*/
+}
+
+body{
+    margin: 0;
+    padding: 0 25px 0 0;
+    font: normal .95em Verdana, sans-serif;
+}
+
+#container{
+    position: absolute;
+    top: 25px;
+    left: 200px;
+    right: 0;
+    width: auto;
+    padding: 1em;
+    z-index: 2;
+    font: normal .95em Verdana, sans-serif;
+    color: #000;
+    background: #D3CFCC url('/images/curb-drain-fade.jpg') no-repeat fixed top left;
+    margin: 0 25px 0 0;
+    border: solid #000 1px;
+}
+
+/************************************************
+    GENERAL STYLE SETUP
+************************************************/
+h1{
+    margin: 0 0 .5em 0;
+    font: bold 1.6em serif;
+    color: #313040;
+    background-color: transparent;
+    border-bottom: solid #000 1px;
+}
+
+h2{
+    margin: .5em 0 .5em 0;
+    font: bold 1.3em Verdana, sans-serif;
+    color: #6e6057;
+    background-color: #DFE0D0;
+    padding: .25em;
+    border: solid #000 1px;
+}
+
+h3{
+    margin: 0;
+    font: bold 1.1em Verdana, sans-serif;
+    padding: 0;
+    font-style: italic;
+}
+
+h4{
+    margin: 0;
+    font: bold 1em Verdana, sans-serif;
+    padding: 0;
+    color: #6e6057;
+}
+
+p{
+    font: normal .9em/1.4em Verdana, sans-serif;
+    margin: 0 0 1.5em 0;
+    background-color: transparent;
+}
+
+a{
+	color: #339;
+	background-color: transparent;
+	text-decoration: none;
+	padding: .2em
+}
+a:hover{
+	color: #c00;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+pre{
+    font: normal 1em/1.3em monospace;
+    background-color: #fff;
+    color: #000;
+    margin: .1em 0 .1em 0;
+    border: #cc9 solid 1px;
+    padding: .1em;
+}
+.example{
+    margin: 1em 0 1em 0;
+    border: #cc9 solid 1px;
+    padding: .5em;
+    background-color: #fff;
+    color: #000;
+    font-size: .9em;
+}
+
+blockquote{
+    font-size: .8em;
+    background-color: #fff;
+    color: #000;
+    margin: .5em;
+    border: #ccc solid 2px;
+    padding: .25em;
+}
+blockquote code{
+    font-size: 1.2em;
+}
+
+blockquote ol, blockquote ul{
+    padding-left: 1em;
+    margin: 1em 0 1em 1.25em;
+}
+
+blockquote ol li, blockquote ul li{
+    margin: 1em 0 1em 0;
+    padding: 0;
+}
+
+ul li p{
+    margin: .75em 0 .75em 0;
+}
+
+#container div ul,
+#container div ul li{
+    list-style-type: disc;
+}
+
+table.comparison{
+    font: normal .75em Verdana, sans-serif;
+    border: solid #663 1px;
+    width: auto;
+}
+
+table.comparison tr th{
+    font-weight: bold;
+    text-align: left;
+    padding: .5em;
+    background-color: #663;
+    color: #ffe;
+}
+
+table.comparison tr td{
+    text-align: center;
+    padding: 0 .5em 0 .5em;
+}
+
+table.comparison tr td.h{
+    text-align: left;
+}
+
+table.comparison tr td.ah{
+    text-align: left;
+    font-weight: bold;
+}
+
+/************************************************
+    INTRO BOX
+************************************************/
+#intro{
+    float: right;
+    margin: 0 0 1em 1em;
+    width: 175px;
+    border: solid #000 1px;
+    padding: 1em;
+    font: normal .9em/1.5em Verdana, sans-serif;
+    color: #000;
+    background: #dfe0d0 url('/images/street-drain.jpg') no-repeat fixed bottom right;
+}
+
+#intro h1{
+    color: #313040;
+    background-color: transparent;
+    font-size: 1.3em;
+}
+#intro h2{
+    color: #313040;
+    background-color: transparent;
+    margin: 0 0 .5em 0;
+    font: bold 1.3em serif;
+    border-bottom: solid #000 1px;
+    border-top: solid #000 0px;
+    border-left: solid #000 0px;
+    border-right: solid #000 0px;
+    padding: 0px;
+}
+#intro ul,
+#intro ol{
+    margin: 0px 0px 1em 0px;
+    padding: 0px;
+}
+#intro ul li,
+#intro ol li{
+    margin-left: 20px;
+    padding: 0px;
+}
+
+/************************************************
+    PAGE RESULTS BOX
+************************************************/
+div#pageResults{
+    background-color: #ffb;
+    padding: 1em;
+    border-style: solid;
+    border-color: #990;
+    border-width: 3px;
+    margin-bottom: 1.5em;
+}
+div#pageResults div.example{
+    font-family: monospace;
+    width: auto;
+}
+
+/************************************************
+    SITE NAVIGATION
+************************************************/
+#siteLinks{
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    width: 150px;
+    margin: 0;
+    height: auto;
+    border: solid #000 1px;
+    padding: .5em;
+    font: normal .85em/1.3em Verdana, sans-serif;
+    color: #000;
+    background: #D3CFCC url('/images/curb-drain-fade.jpg') no-repeat fixed top left;
+    list-style-type: none;
+    z-index: 2;
+}
+#siteLinks h1,
+#siteLinks h2{
+    margin: 0 0 .5em 0;
+    font: bold 1.5em serif;
+    color: #313040;
+    background-color: transparent;
+    border-bottom: solid #313040 1px;
+    border-top: solid #000 0px;
+    border-left: solid #000 0px;
+    border-right: solid #000 0px;
+    padding: 0px;
+}
+#siteLinks li{
+    list-style-type: none;
+    margin: 1em 0 1em 0;
+    padding: 0;
+}
+
+#siteLinks li ul {
+    list-style-type:none;
+    padding-left: 0;
+    margin: 1em 0 1em 0;
+}
+
+#siteLinks p{
+    margin: 0;
+    font: normal .75em Verdana, sans-serif;
+    color: #807050;
+    background-color: transparent;
+    text-align: center;
+}
+
+#siteLinks p a{
+    color: #807050;
+    background-color: transparent;
+    text-decoration: underline;
+}
+#siteLinks p a:hover{
+    color: #c00;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/************************************************
+    ARTICLE FOOT NOTES WHEN NEEDED
+************************************************/
+#footNotes{
+    list-style-type: none;
+    margin: 2em 0 0 0;
+    padding: 5px;
+    font-size: .8em;
+    color: #000;
+    background-color: transparent;
+}
+#footNotes li{
+    margin: .5em 0 .5em 0;
+}
+
+#notUsed{
+    color: rgb(125, 0, 75);
+    background-color: rgb(201, 130, 222);
+}
+/************************************************
+    NAVIGATION MENU
+************************************************/
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 205px;
+	background:#1598CE;
+	}
+ul li {
+	position: relative;
+	background:#1598CE;
+	}
+li ul {
+	position: absolute;
+	left: 206px;
+	top: 0;
+	display: none;
+	background:#1598CE;
+	}
+ul li a {
+	display: block;
+	text-decoration: none;
+	color: #777;
+	background:#1598CE;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-bottom: 0;
+	}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 205px;
+	border-bottom: 1px solid #ccc;
+	background:#1598CE;
+	}
+li:hover ul { display: block; }
+ul a:hover {
+   background: #2E6397;
+   border-left: 5px solid #FF9933}
+   li a:hover {
+   background: #2E6397;
+   border-left: 5px solid #FF9933}
+
+td.left {
+  
+   background:#1598CE;
+   vertical-align:top}
+
+td.left div {margin-top:10px}
+td.left li {border-bottom:1px solid #EEE}
+td.left ul {margin: 0;padding: 0;list-style-type: none}
+
+td.left a {
+   background: #1598CE;
+   border-left: 5px solid #1598CE}
+td.left a, li.title {
+
+   color: #EEE;
+   padding: 2px;
+   display: block;
+   text-decoration: none}
+td.left a:hover {
+   background: #2E6397;
+   border-left: 5px solid #FF9933}
+li.title {
+   background: #4171A0;
+   border-left: 5px solid #EEE}
+   
